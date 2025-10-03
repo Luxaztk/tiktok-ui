@@ -7,19 +7,50 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Local env files
 *.local
+.env
+.env.*.local
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Optional cache directories
+.cache/
+.temp/
+.tmp/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# SWC build cache (nếu dùng swc)
+.swc/
+
+# Coverage reports (nếu dùng vitest/jest)
+coverage/
+
+# Storybook build (nếu dùng Storybook)
+storybook-static/
+
+# Lock files cho các package managers khác
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Project-specific
 structure.txt
